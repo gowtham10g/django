@@ -1,0 +1,129 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internships</title>
+  
+  <style>
+    
+/* Basic CSS styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+  }
+  body {
+    background-image: url('https://cdn.careers.tufts.edu/wp-content/uploads/sites/100/2020/11/education-internship.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; /* Makes the background fixed when scrolling */
+    background-blend-mode: darken; /* Blends the image with a background color */
+    background-color: whitesmoke; /* Adds a color overlay (works with blend mode) */
+}
+
+  header {
+    background-color: #003366;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    background-color: #0055a5;
+    padding: 10px;
+  }
+  nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  nav a:hover {
+    text-decoration: underline;
+  }
+  .container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+  }
+  .intro {
+    padding: 20px;
+    text-align: center;
+  }
+  .intro h1 {
+    color: #333;
+  }
+  .internships {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  .internship-card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  .internship-card h3 {
+    color: #0055a5;
+  }  footer {
+    background-color: #003366;
+    color: #fff;
+    text-align: center;
+    padding: 0.5px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    nav img {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+  }
+
+  </style>
+ 
+  </head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    
+    <h1 class="h1head">Welcome to the internship </h1>
+    <div class="auth-links">
+            
+        </div>
+    </div>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav>
+   
+    <a href="home.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="courses.html">courses</a>
+    <a href="contact.html">Contact us</a>
+    <a href="{% url 'login' %}">Login</a>
+    <a href="{% url 'register' %}">Register</a>
+    
+    
+  </nav>
+
+   
+
+      
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 B.Tech Internships. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

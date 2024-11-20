@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internships</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    /* Header Section */
+    header {
+      background-color: #004d00;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    /* Navigation Bar */
+    nav {
+      background-color: #008000;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      padding: 8px 15px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #005900;
+    }
+
+    /* Main Content Section */
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+      background: white;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+
+    .intro {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .intro h2 {
+      color: #008000;
+    }
+
+    .intro p {
+      font-size: 1.1em;
+      color: #666;
+    }
+
+    /* Internship Categories */
+    .category-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .category {
+      background-color: #f9f9f9;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+    }
+
+    .category h3 {
+      color: #004d00;
+      margin-bottom: 10px;
+    }
+
+    .category ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .category ul li {
+      margin: 5px 0;
+    }
+
+    /* Footer Section */
+    footer {
+      text-align: center;
+      background-color: #004d00;
+      color: white;
+      padding: 10px 0;
+      margin-top: 20px;
+    }
+  </style>
+ 
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Welcome to the Internship Portal</h1>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="{% url 'home' %}">Home</a>
+    <a href="{% url 'login' %}">Login</a>
+    <a href="{% url 'register' %}">Register</a>
+  </nav>
+
+  <!-- Main Content Section -->
+  <div class="container">
+    <div class="intro">
+      <h2>Explore Internship Categories</h2>
+      <p>Discover a variety of internship opportunities tailored to different fields and skill levels.</p>
+    </div>
+
+    <!-- Internship Categories Section -->
+    <div class="internships category-section">
+      <!-- Category 1 -->
+      <div class="category">
+        <h3>Computer Science Engineering</h3>
+        <ul>
+          <li>Web Developer</li>
+          <li>Software Developer</li>
+          <li>Cyber Security</li>
+          <li>Python Developer</li>
+          <li>AWS Cloud</li>
+        </ul>
+      </div>
+
+      <!-- Category 2 -->
+      <div class="category">
+        <h3>Civil Engineering</h3>
+        <ul>
+          <li>Building Construction</li>
+          <li>Roads and Highways</li>
+          <li>AutoCAD & StaadPro</li>
+          <li>Disaster Management</li>
+        </ul>
+      </div>
+
+      <!-- Category 3 -->
+      <div class="category">
+        <h3>Electronics and Communication Engineering</h3>
+        <ul>
+          <li>Embedded Systems</li>
+          <li>Internet of Things</li>
+          <li>Robotics</li>
+          <li>Machine Learning</li>
+          <li>Wireless Communication</li>
+        </ul>
+      </div>
+
+      <!-- Category 4 -->
+      <div class="category">
+        <h3>Mechanical Engineering</h3>
+        <ul>
+          <li>Industrial Safety</li>
+          <li>Mechatronics</li>
+          <li>Steel Structures</li>
+          <li>Piping Systems</li>
+          <li>Vibration Systems</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 B.Tech Internships. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

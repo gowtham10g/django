@@ -1,0 +1,75 @@
+
+/* Basic CSS styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+  }
+  body {
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; /* Makes the background fixed when scrolling */
+    background-blend-mode: darken; /* Blends the image with a background color */
+    background-color: rgba(0, 0, 0, 0.5); /* Adds a color overlay (works with blend mode) */
+}
+
+  header {
+    background-color: #003366;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    background-color: #0055a5;
+    padding: 10px;
+  }
+  nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  nav a:hover {
+    text-decoration: underline;
+  }
+  .container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+  }
+  .intro {
+    padding: 20px;
+    text-align: center;
+  }
+  .intro h1 {
+    color: #333;
+  }
+  .internships {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  .internship-card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  .internship-card h3 {
+    color: #0055a5;
+  }
+  footer {
+    background-color: #003366;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 10;
+    width: 100%;
+  }
